@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Basic -->
-    <title>浮気ジャッジメント | 独自の基準で不倫・浮気を徹底判定</title>
-    <meta name="description" content="その行動、実はクロかも？「浮気ジャッジメント」は、様々なシチュエーションから不倫や浮気の境界線を独自の基準で判定する診断エンターテインメントサイトです。">
-    <meta name="keywords" content="浮気診断,不倫判定,浮気ジャッジ,恋愛診断,不倫の境界線">
-    <link rel="canonical" href="https://example.com/">
-
-    <!-- Social Meta (OGP) -->
-    <meta property="og:title" content="浮気ジャッジメント | 徹底判定">
-    <meta property="og:description" content="その行動、実はクロかも？様々なシチュエーションから不倫や浮気の境界線を独自の基準で判定。">
+    <!-- SEO Basic: ブランド名を強調 -->
+    <title>浮気ジャッジメント | 独自の境界線で不倫・浮気を判定</title>
+    <meta name="description" content="浮気ジャッジメントは、独自の基準で不倫や浮気の境界線を判定する身内ノリサイトです。日常の何気ない行動が『クロ』か『シロ』か、私たちの偏見とユーモアでジャッジします。">
+    <meta name="keywords" content="浮気ジャッジメント,浮気診断,不倫判定,身内ノリ,恋愛ジャッジ">
+    
+    <!-- OGP Settings -->
+    <meta property="og:title" content="浮気ジャッジメント | 独自の境界線で不倫・浮気を判定">
+    <meta property="og:description" content="浮気ジャッジメントは、不倫や浮気の境界線を独自の基準で判定する身内ノリサイトです。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://example.com/">
     <meta property="og:image" content="https://example.com/ogp-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured Data: 検索エンジンにサイト名を固有名詞として登録 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
+      "@type": "WebSite",
       "name": "浮気ジャッジメント",
-      "description": "不倫・浮気の境界線を判定する診断アプリ",
-      "genre": "Entertainment",
-      "operatingSystem": "All",
-      "applicationCategory": "HealthApplication",
-      "about": {
-        "@type": "Thing",
-        "name": "浮気診断"
-      }
+      "description": "独自の基準で不倫や浮気の境界線を判定する身内ノリサイト",
+      "url": "https://example.com/"
     }
     </script>
 
@@ -60,7 +53,6 @@
             letter-spacing: -0.05em;
         }
 
-        /* パフォーマンス重視のトランジション */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -78,7 +70,6 @@
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             background: #fff;
             border: 1px solid #eee;
-            will-change: transform, box-shadow;
         }
 
         .judgment-card:hover {
@@ -142,8 +133,8 @@
                 私達は純粋な世界を目指しています。
             </p>
             <p class="text-lg md:text-xl font-light leading-relaxed text-gray-600 mb-8">
-                浮気を許しません。<br>
-                様々なシチュエーションを考えてみましょう。
+                浮気ジャッジメントは、独自の基準で不倫や浮気の境界線を判定する身内ノリサイトです。<br>
+                世の中の不浄を許しません。様々なシチュエーションを見ていきましょう。
             </p>
             <div class="animate-bounce mt-12" aria-hidden="true">
                 <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -157,18 +148,16 @@
         
         <!-- Scenario 01 -->
         <article class="mb-24 fade-in">
-            <header class="mb-6">
-                <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400">Scenario 01</h2>
-            </header>
-            <div class="judgment-card p-4 rounded-2xl relative overflow-hidden" onclick="reveal(this)" role="button" aria-expanded="false" aria-controls="result-01" aria-label="判定を確認する">
+            <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400 mb-6">Scenario 01</h2>
+            <div class="judgment-card p-4 rounded-2xl relative overflow-hidden" onclick="reveal(this)" role="button" aria-expanded="false" aria-label="判定を見る">
                 <div class="initial-content transition-opacity duration-500">
                     <figure class="image-container rounded-xl mb-6">
-                        <img src="images/image1.jpg" alt="[浮気現場1の様子]" loading="lazy" onerror="this.src='https://via.placeholder.com/800x450?text=Scenario+1'">
+                        <img src="images/image1.jpg" alt="[浮気現場1の画像]" loading="lazy" onerror="this.src='https://via.placeholder.com/800x450?text=Scenario+1'">
                     </figure>
                     <p class="text-2xl font-bold text-center mb-4">これは浮気でしょうか？</p>
                     <p class="text-center text-gray-400 text-sm">タップして判定を確認</p>
                 </div>
-                <div id="result-01" class="result-overlay" aria-live="polite">
+                <div class="result-overlay" aria-live="polite">
                     <div class="text-6xl md:text-8xl font-black text-red-600 title-font mb-4 border-8 border-red-600 px-6 py-2 rotate-[-5deg]">
                         浮気
                     </div>
@@ -181,18 +170,16 @@
 
         <!-- Scenario 02 -->
         <article class="mb-24 fade-in">
-            <header class="mb-6">
-                <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400">Scenario 02</h2>
-            </header>
-            <div class="judgment-card p-4 rounded-2xl relative overflow-hidden" onclick="reveal(this)" role="button" aria-expanded="false" aria-controls="result-02" aria-label="判定を確認する">
+            <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400 mb-6">Scenario 02</h2>
+            <div class="judgment-card p-4 rounded-2xl relative overflow-hidden" onclick="reveal(this)" role="button" aria-expanded="false" aria-label="判定を見る">
                 <div class="initial-content transition-opacity duration-500">
                     <figure class="image-container rounded-xl mb-6">
-                        <img src="images/image2.jpg" alt="[浮気現場2の様子]" loading="lazy" onerror="this.src='https://via.placeholder.com/800x450?text=Scenario+2'">
+                        <img src="images/image2.jpg" alt="[浮気現場2の画像]" loading="lazy" onerror="this.src='https://via.placeholder.com/800x450?text=Scenario+2'">
                     </figure>
                     <p class="text-2xl font-bold text-center mb-4">これは浮気でしょうか？</p>
                     <p class="text-center text-gray-400 text-sm">タップして判定を確認</p>
                 </div>
-                <div id="result-02" class="result-overlay" aria-live="polite">
+                <div class="result-overlay" aria-live="polite">
                     <div class="text-6xl md:text-8xl font-black text-red-600 title-font mb-4 border-8 border-red-600 px-6 py-2 rotate-[3deg]">
                         浮気
                     </div>
@@ -205,18 +192,16 @@
 
         <!-- Scenario 03 -->
         <article class="mb-24 fade-in">
-            <header class="mb-6">
-                <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400">Scenario 03</h2>
-            </header>
-            <div class="judgment-card p-4 rounded-2xl relative overflow-hidden" onclick="reveal(this)" role="button" aria-expanded="false" aria-controls="result-03" aria-label="判定を確認する">
+            <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400 mb-6">Scenario 03</h2>
+            <div class="judgment-card p-4 rounded-2xl relative overflow-hidden" onclick="reveal(this)" role="button" aria-expanded="false" aria-label="判定を見る">
                 <div class="initial-content transition-opacity duration-500">
                     <figure class="image-container rounded-xl mb-6">
-                        <img src="images/image3.jpg" alt="[浮気現場3の様子]" loading="lazy" onerror="this.src='https://via.placeholder.com/800x450?text=Scenario+3'">
+                        <img src="images/image3.jpg" alt="[浮気現場3の画像]" loading="lazy" onerror="this.src='https://via.placeholder.com/800x450?text=Scenario+3'">
                     </figure>
                     <p class="text-2xl font-bold text-center mb-4">これは浮気でしょうか？</p>
                     <p class="text-center text-gray-400 text-sm">タップして判定を確認</p>
                 </div>
-                <div id="result-03" class="result-overlay" aria-live="polite">
+                <div class="result-overlay" aria-live="polite">
                     <div class="text-6xl md:text-8xl font-black text-red-600 title-font mb-4 border-8 border-red-600 px-6 py-2 rotate-[-2deg]">
                         不倫
                     </div>
@@ -230,18 +215,16 @@
 
         <!-- Scenario 04 -->
         <article class="mb-24 fade-in">
-            <header class="mb-6">
-                <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400">Scenario 04</h2>
-            </header>
-            <div class="judgment-card p-4 rounded-2xl relative overflow-hidden" onclick="reveal(this)" role="button" aria-expanded="false" aria-controls="result-04" aria-label="判定を確認する">
+            <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400 mb-6">Scenario 04</h2>
+            <div class="judgment-card p-4 rounded-2xl relative overflow-hidden" onclick="reveal(this)" role="button" aria-expanded="false" aria-label="判定を見る">
                 <div class="initial-content transition-opacity duration-500">
                     <figure class="image-container rounded-xl mb-6">
-                        <img src="images/image4.jpg" alt="[浮気現場4の様子]" loading="lazy" onerror="this.src='https://via.placeholder.com/800x450?text=Scenario+4'">
+                        <img src="images/image4.jpg" alt="[浮気現場4の画像]" loading="lazy" onerror="this.src='https://via.placeholder.com/800x450?text=Scenario+4'">
                     </figure>
                     <p class="text-2xl font-bold text-center mb-4">これは浮気でしょうか？</p>
                     <p class="text-center text-gray-400 text-sm">タップして判定を確認</p>
                 </div>
-                <div id="result-04" class="result-overlay" aria-live="polite">
+                <div class="result-overlay" aria-live="polite">
                     <div class="text-6xl md:text-8xl font-black text-red-600 title-font relative -left-1 -top-1 mb-4 border-8 border-red-600 px-6 py-2 rotate-[-2deg]">
                         不倫
                     </div>
@@ -262,7 +245,6 @@
     </footer>
 
     <script>
-        // パフォーマンス最適化のためのIntersection Observer
         const observerOptions = { 
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px' 
@@ -272,7 +254,6 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    // 一度表示されたら監視を解除してメモリを節約
                     observer.unobserve(entry.target);
                 }
             });
@@ -280,7 +261,6 @@
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        // アクセシビリティを考慮した判定ロジック
         function reveal(el) {
             if (el.classList.contains('revealed')) return;
             el.classList.add('revealed');
@@ -288,7 +268,6 @@
             el.style.pointerEvents = 'none';
         }
 
-        // 初期表示時のタイトルのチラつき防止
         window.addEventListener('load', () => {
             const title = document.getElementById('main-title');
             if(title) title.classList.add('visible');
