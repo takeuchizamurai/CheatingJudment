@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /
 
-# サイトマップの場所を明示（ドメインが決まったら差し替え）
+# サイトマップの場所を明示
 Sitemap: https://cheatingjudment.creepykaichi.workers.dev
